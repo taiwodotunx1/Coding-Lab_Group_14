@@ -29,7 +29,7 @@ os.makedirs(LOG_DIR)
 headers = {
 "heart": "Timestamp | Device_ID | Heart_Rate (BPM) | Status\n",
 "temp": "Timestamp | Device_ID | Temperature (Celsius) | Status\n",
-"water": "Timestamp | Device_ID | Usage (Liters/min) | Status\n"
+"water": "Timestamp | Device_ID | Usage (Liters/min) | Status\n",
 }
 for key, path in LOGS.items():
 if not os.path.exists(path) or os.stat(path).st_size == 0:
