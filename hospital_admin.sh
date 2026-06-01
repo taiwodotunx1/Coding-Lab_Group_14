@@ -96,4 +96,3 @@ sys.exit(1)
 cmd = sys.argv[1].lower()
 if cmd == "start": start()
 elif cmd == "stop": stop()
-
