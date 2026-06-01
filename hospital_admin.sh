@@ -1,7 +1,3 @@
-
-Page
-2
-of 2
 #!/usr/bin/env python3
 import random
 import time
