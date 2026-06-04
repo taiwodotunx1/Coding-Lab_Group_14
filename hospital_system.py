@@ -14,12 +14,12 @@ DEVICES = {
 Monitors
 "temp": [f"WARD_B_TEMP_{i:02d}" for i in range(1, 6)], # 5 Temperature
 Sensors
-"water": ["FACILITY_WATER_MAIN", "ICU_WATER_RESERVE"] # 2 Water Meters
+"water": ["FACILITY_WATER_MAIN", "ICU_WATER_RESERVE"], # 2 Water Meters
 }
 LOGS = {
 "heart": os.path.join(LOG_DIR, "heart_rate_log.log"),
 "temp": os.path.join(LOG_DIR, "temperature_log.log"),
-"water": os.path.join(LOG_DIR, "water_usage_log.log")
+"water": os.path.join(LOG_DIR, "water_usage_log.log"),
 }
 def ensure_environment():
 """Ensure log directory and headers exist."""
