@@ -44,5 +44,9 @@ secure_data() {
 }
 
 #Calling the functions to actually execute the code
-initialize_system
-secure_data
+main(){
+	initialize_system
+	secure_data
+	echo "System Environment Secured" - $(date)"
+}
+main
