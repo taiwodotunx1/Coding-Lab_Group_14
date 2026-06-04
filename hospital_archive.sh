@@ -20,4 +20,16 @@ rotate_logs() {
             echo "  [>>] Moved: $log_file  -->  $dest"
         fi
     done
+
+    echo ""
+    echo "  [M4] Recreating empty log files in active_logs/..."
+    touch active_logs/heart_rate_log.log
+    touch active_logs/temperature_log.log
+    touch active_logs/water_usage_log.log
+    echo "  [OK] Log files recreated. Engine can continue recording."
+    echo ""
+    echo "  [M4] Archive complete. Timestamp: $TIMESTAMP"
+    echo "============================================"
 }
+
+rotate_logs
