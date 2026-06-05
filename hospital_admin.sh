@@ -37,6 +37,12 @@ secure_data() {
             echo "       Secured: $log_file"
         fi
     done
+
+    # Display the resulting permissions so the user can verify
+    echo ""
+    echo "  [M2] Current permissions on active_logs/:"
+    ls -l active_logs/
+    echo ""
 }
 
 # Member 3 - The Orchestrator
