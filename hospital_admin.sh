@@ -41,7 +41,7 @@ secure_data() {
     # Display the resulting permissions so the user can verify
     echo ""
     echo "  [M2] Current permissions on active_logs/:"
-    ls -l active_logs/
+    ls -la active_logs/
     echo ""
 }
 
