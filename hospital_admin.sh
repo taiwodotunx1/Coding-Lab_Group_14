@@ -42,7 +42,13 @@ secure_data() {
     echo "  [M2] Security permissions applied successfully. active_logs is now owner-access only."
     echo ""
 }
+# Member 3 - The Orchestrator
+main(){
+    # Calls all functions in order
+    echo "Starting system setup..."
+    initialize_system
+    secure_data
+    echo "System Environment Secured - $(date)"
+}
 
-#Calling the functions to actually execute the code
-initialize_system
-secure_data
+main
