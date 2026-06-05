@@ -1,6 +1,7 @@
 #!/bin/bash
 # Author: Member 2 - Security Lead (shyaka-alex)
 # Purpose: Set up and secure the KNH hospital log environment
+# Purpose: Set up and secure the KNH hospital log environment
 # Member 1 (Architect): initialize_system()
 initialize_system() {
 
