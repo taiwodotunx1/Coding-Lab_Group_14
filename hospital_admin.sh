@@ -39,9 +39,11 @@ secure_data() {
     done
 
     # Display the resulting permissions so the user can verify
+    echo "  [M2] Security permissions applied successfully. active_logs is now owner-access only."
     echo ""
     echo "  [M2] Current permissions on active_logs/:"
     ls -la active_logs/
+    echo "  [M2] Security permissions applied successfully. active_logs is now owner-access only."
     echo ""
 }
 
