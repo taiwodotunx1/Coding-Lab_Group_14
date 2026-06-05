@@ -43,6 +43,7 @@ secure_data() {
     echo "  [M2] Security permissions applied successfully. active_logs is now owner-access only."
     echo ""
 }
+# M2: Permissions - chmod 700 restricts active_logs to owner only
 # Member 3 - The Orchestrator
 main(){
     # Calls all functions in order
