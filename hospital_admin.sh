@@ -23,6 +23,11 @@ secure_data() {
     echo "============================================"
     echo "  [M2] Applying Security Permissions        "
     echo "============================================"
+
+    # chmod 700 means only the owner can read, write, execute the directory
+    echo "  [>>] Setting active_logs/ to 700 (owner only)..."
+    chmod 700 active_logs/
+    echo "  [OK] active_logs/ locked to owner only."
 }
 
 # Member 3 - The Orchestrator
