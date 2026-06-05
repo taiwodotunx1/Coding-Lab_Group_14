@@ -28,6 +28,15 @@ secure_data() {
     echo "  [>>] Setting active_logs/ to 700 (owner only)..."
     chmod 700 active_logs/
     echo "  [OK] active_logs/ locked to owner only."
+
+    # chmod 600 ensures each log file is not readable by group or others
+    echo "  [>>] Setting log files to 600 (owner read+write only)..."
+    for log_file in active_logs/*.log; do
+        if [ -f "$log_file" ]; then
+            chmod 600 "$log_file"
+            echo "       Secured: $log_file"
+        fi
+    done
 }
 
 # Member 3 - The Orchestrator
