@@ -18,10 +18,18 @@ initialize_system() {
 
 }
 
+# Member 2 (Security Lead): secure_data()
+secure_data() {
+    echo "============================================"
+    echo "  [M2] Applying Security Permissions        "
+    echo "============================================"
+}
+
 # Member 3 - The Orchestrator
 main() {
     echo "Starting system setup..."
     initialize_system
+    secure_data
     echo "System Environment Secured - $(date)"
 }
 main
