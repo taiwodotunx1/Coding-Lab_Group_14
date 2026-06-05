@@ -1,3 +1,4 @@
+# Member 2 (Security Lead): shyaka-alex
 #!/bin/bash
 
 #Declaring the function
