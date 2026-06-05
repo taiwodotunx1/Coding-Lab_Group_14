@@ -18,7 +18,7 @@ fi
 done
 
 }
-
+# M2: chmod 600 ensures log files are not readable by group or others
 # Member 2 — The Security Lead: secure_data()
 secure_data() {
     echo "============================================"
