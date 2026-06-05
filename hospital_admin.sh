@@ -57,7 +57,9 @@ secure_data() {
 
 # Member 3 - The Orchestrator
 main() {
-    echo "Starting system setup..."
+    echo "================================================"
+    echo "  KNH Hospital Admin Script - Starting Setup..."
+    echo "================================================"
     initialize_system
     secure_data
     echo "System Environment Secured - $(date)"
