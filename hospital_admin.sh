@@ -24,6 +24,12 @@ secure_data() {
     echo "  [M2] Applying Security Permissions        "
     echo "============================================"
 
+    # Safety check - warn if active_logs does not exist
+    if [ ! -d "active_logs" ]; then
+        echo "  [ERROR] active_logs/ not found. Run initialize_system first."
+        return 1
+    fi
+
     # chmod 700 means only the owner can read, write, execute the directory
     echo "  [>>] Setting active_logs/ to 700 (owner only)..."
     chmod 700 active_logs/
