@@ -50,5 +50,4 @@ main(){
     secure_data
     echo "System Environment Secured - $(date)"
 }
-
 main
